@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+
+.user-cart span{
+    background-color:rgb(152, 193, 216); 
+    padding-right:3px; 
+    padding-left:3px;  
+    border-radius:10px; 
+    font-size:18px;
+    margin-left:-1.2rem;
+}
+
+
+
+/*********** admin dashboard styling **********/
+  .card{
+      background-color: #00BFFF;
+      padding:20px;
+      margin: 10px;
+      border-radius: 10px;
+      
+  }
+
+/************************** for sidebar ***********************************/
+
+  /* The sidebar menu */
+  .sidebar {
+    
+      background-color:#00BFFF; /* Black*/
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0;
+      left: 0;
+      
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 50px; /* Place content 60px from the top */
+      transition: 1.5s; /* 0.5 second transition effect to slide in the sidebar */
+    }
+    
+    /* The sidebar links */
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      display: block;
+      transition: 1s;
+    }
+    
+    .sidebar .side-header{
+          margin-left: 30px;
+          margin-bottom: 8px;
+          color: #fff;
+      }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+      background-color: #00BFFF;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 2px;
+      font-size: 34px;
+      margin-left: 50px;
+    }
+    
+    /* The button used to open the sidebar */
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px 15px;
+      border: none;
+      color: #fff;
+      background-color:#00BFFF;
+    }
+    
+    .openbtn:hover {
+      color: #ECDAC9;
+    }
+    
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    .main {
+      transition: margin-left .5s; /* If you want a transition effect */
+      padding: 20px;
+    }
+    
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
+
+/************************** book table styling *********************************/
+
+  table {
+    width: 70%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+  }
+
+  td,
+  th {
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #00BFFF;
+    color: #fafafa;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: bold;
+  }
+
+  tr {
+    width: 100%;
+    background-color: #00BFFF;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eeeeee;
+  }
+ .container{
+  display: flex;
+
+
+margin: auto;
+width: 100%;
+border: none;
+padding: 10px;
+align-items: center;
+
+
+  }
+
+
+  .services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+ }
+ 
+ .services .box-container .box{
+    padding:3rem 2rem;
+    text-align: center;
+    background: var(--main-color);
+    cursor: pointer;
+ }
+ 
+ .services .box-container .box:hover{
+    background: var(--black);
+ }
+ 
+ .services .box-container .box img{
+    height: 7rem;
+ }
+ 
+ .services .box-container .box h3{
+    flex-wrap: wrap;
+    color:var(--black);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+ }
+
+
+ .chat-body .typing-area{
+  padding: 18px 30px;
+  display: flex;
+}
+.typing-area input{
+  height: 45px;
+  width: calc(100% - 58px);
+  font-size:17px;
+  border: 1px solid #ccc;
+  padding: 0 13px;
+  border-radius:5px 0 0 5px;
+  outline: none;
+
+}
+.typing-area button{
+  width: 50px;
+  border: none;
+  outline: none;
+  border-radius:5px 0 0 5px;
+  cursor: pointer;
+  background: #ffc105;
+
+
+}
+
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+.searchDiv input{
+  height: 45px;
+  width: calc(100% - 58px);
+  font-size:17px;
+  border: 1px solid #ccc;
+  padding: 0 13px;
+  border-radius:5px 0 0 5px;
+  outline: none;
+}
+.badge.bg-danger {
+  font-size: 1.8em;
+  display: none;
+} 
+.book-manage{
+  transform: scale(0.6);
+  transform-origin: top left;
+  font-size: 60%;
+}
